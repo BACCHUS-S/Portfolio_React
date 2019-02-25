@@ -6,10 +6,13 @@ class Landing extends Component {
   render() {
     return(
       <div style={{width: '100%', margin: 'auto'}}>
+        <div className="landing-grid-top">
+        　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+        </div>
         <Grid className="landing-grid">
           <Cell col={12}>
             <img
-              src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+              src="https://lh3.googleusercontent.com/-bx86icJkUf8/XC3vJYQ51VI/AAAAAAAAAtw/RCP00ziFxSAyUQxtrgEPveB-oRXlAqqcACEwYBhgL/w140-h139-p/%25EB%25B0%25B0%25EC%2584%25B1%25ED%2598%2584_%25EC%259B%2590.png"
               alt="avatar"
               className="avatar-img"
               />

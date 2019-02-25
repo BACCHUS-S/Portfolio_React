@@ -15,14 +15,14 @@ class Projects extends Component {
         <div className="projects-grid">
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/da9a1e74-424b-4f4c-ad4e-b6d1d1a6a4c8/d5tyyr6-0d540b3c-775c-4e89-93b7-2cb8e4fc83f6.png) center / cover'}} >Android Camera #1</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            Android Camera Function with CAMERA (ver1)
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored a href="https://github.com/oronaminc/Android_Camera">GitHub</Button>
+              <Button colored a href="https://github.com/oronaminc/Android_Camera/issues">ScreenShot</Button>
+              <Button colored>Etc</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -31,14 +31,14 @@ class Projects extends Component {
 
           {/* Project 2 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/da9a1e74-424b-4f4c-ad4e-b6d1d1a6a4c8/d5tyyr6-0d540b3c-775c-4e89-93b7-2cb8e4fc83f6.png) center / cover'}} >Android grid Album #2</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            Customed grid album with recycling items
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored a href="https://github.com/oronaminc/Android_Camera">GitHub</Button>
+              <Button colored a href="https://github.com/oronaminc/Android_Camera/issues">ScreenShot</Button>
+              <Button colored>Etc</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -47,14 +47,14 @@ class Projects extends Component {
 
           {/* Project 3 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/da9a1e74-424b-4f4c-ad4e-b6d1d1a6a4c8/d5tyyr6-0d540b3c-775c-4e89-93b7-2cb8e4fc83f6.png) center / cover'}} >Android Socket #3</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              TCP/IP Communication with socket communication
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored a href="https://github.com/oronaminc/Android_AP-project">GitHub</Button>
+              <Button colored a href="https://github.com/oronaminc/Android_AP-project/issues">ScreenShot</Button>
+              <Button colored>Etc</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -65,19 +65,68 @@ class Projects extends Component {
 
       )
     } else if(this.state.activeTab === 1) {
-      return (
-        <div><h1>This is Angular</h1></div>
+      return(
+        <div className="projects-grid">
+          {/* Project 1 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
+            <CardText>
+              React Portfolio with nodsJS, AJAX, Api connection
+            </CardText>
+            <CardActions border>
+              <Button colored a href="https://github.com/oronaminc/Portfolio_React">GitHub</Button>
+              <Button colored a href="https://github.com/oronaminc/Portfolio_React/issues">ScreenShot</Button>
+              <Button colored>Etc</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+          {/* Project 2 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
+            <CardText>
+              Mvoie Chart with Torrent Movie api
+            </CardText>
+            <CardActions border>
+              <Button colored a href="https://github.com/oronaminc/movie_app">GitHub</Button>
+              <Button colored a href="https://github.com/oronaminc/movie_app/issues">ScreenShot</Button>
+              <Button colored>Etc</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+        </div>
+
+
       )
     } else if(this.state.activeTab === 2) {
-      return (
-        <div><h1>This is VueJS</h1></div>
-      )
-    } else if(this.state.activeTab === 3) {
-      return (
-        <div><h1>This is MongoDB</h1></div>
-      )
-    }
+      return(
+        <div className="projects-grid">
+          {/* Project 1 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://programmers.co.kr/assets/img-meta-programmers-c4442532396affc7fdb576c46ed7cb0540f48cf846e853f173b212faa1d26fad.png) center / cover'}} >Algorithm Answer</CardTitle>
+            <CardText>
+              Baekjoon, Online jedge problem solving
+            </CardText>
+            <CardActions border>
+              <Button colored a href="https://github.com/oronaminc/Baekjoon">GitHub</Button>
+              <Button colored a href="https://github.com/oronaminc/Baekjoon/issues">ScreenShot</Button>
+              <Button colored>Etc</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
 
+        </div>
+
+
+      )
+    } 
   }
 
 
@@ -86,10 +135,9 @@ class Projects extends Component {
     return(
       <div>
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+          <Tab>Android</Tab>
           <Tab>React</Tab>
-          <Tab>Angular</Tab>
-          <Tab>VueJS</Tab>
-          <Tab>MongoDB</Tab>
+          <Tab>Algorithm</Tab>
         </Tabs>
 
 

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-import Main from './components/main';
+
+import Main from './components/main.js';
 import { Link } from 'react-router-dom';
 
 class App extends Component {
@@ -9,19 +10,19 @@ class App extends Component {
     return (
       <div className="demo-big-content">
     <Layout>
-        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>
+        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white', fontSize:'50px'}} to="/">SH's Profile</Link>} scroll>
             <Navigation>
-                <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+                <Link style={{fontSize:"35px"}} to="/resume">Resume</Link>
+                <Link style={{fontSize:"35px"}} to="/projects">Projects</Link>
+                <Link style={{fontSize:"35px"}} to="/aboutme">Movie API</Link>
+                <Link style={{fontSize:"35px"}} to="/contact">Contact</Link>
             </Navigation>
         </Header>
         <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">MyPortfolio</Link>}>
             <Navigation>
               <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
               <Link to="/projects">Projects</Link>
+              <Link to="/aboutme">Movie API</Link>
               <Link to="/contact">Contact</Link>
             </Navigation>
         </Drawer>
@@ -31,7 +32,6 @@ class App extends Component {
         </Content>
     </Layout>
 </div>
-
     );
   }
 }
